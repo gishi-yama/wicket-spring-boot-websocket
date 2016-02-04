@@ -1,0 +1,26 @@
+wicket:
+  core:
+    settings:
+      general:
+        configuration-type: deployment
+    csrf:
+      enabled: true
+  stuff:
+    annotationscan:
+      enabled: true
+  external:
+    development:
+      wicketsource:
+        enabled: true
+      #devutils:
+        #diskstorebrowser:
+          #enabled: true
+        #interceptor:
+          #enable-live-sessions-page: true
+        #statelesschecker:
+          #enabled: true
+    websocket:
+      enabled: false
+server:
+  compression:
+    enabled: true

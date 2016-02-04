@@ -1,0 +1,28 @@
+<!DOCTYPE html> <html>
+  <head>
+    <title>WebSocket チャット・アプリケーション</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <link href="./css/ws-chat.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="js/websocket-chat.js"></script>
+  </head> 
+  <body>
+    <div id="title" class="title">
+      <h2>WebSocket チャット・アプリケーション</h2>
+    </div>
+    <div id="login" class="login">
+      ログインユーザ名：<input id="name"/>
+      <input id="connect" type="button" value="ログイン" onClick="connectServerEndpoint();">
+    </div>
+
+    <div id="chat" class="chat">
+      <input id ="inputMessage">
+      <input id="submitMessage" type="button" onclick="submitMessage();" value="メッセージ送信"><br>
+      <input id="close" type="button" value="切断" onClick="closeServerEndpoint();">
+      <div id="messages" class="messages">
+        <div>チャット・メッセージ</div>
+        <div id="insertpos" class="insertpos"></div>
+      </div>
+    </div>
+
+  </body>
+</html>

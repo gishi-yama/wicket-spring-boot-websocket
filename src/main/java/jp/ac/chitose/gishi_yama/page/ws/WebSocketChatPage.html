@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html xmlns:wicket="http://wicket.apache.org">
+<head>
+<meta charset="utf-8" />
+</head>
+<body>
+<wicket:extend>
+  <div id="title" class="title">
+    <h2>WebSocket チャット・アプリケーション</h2>
+  </div>
+    <div id="login" class="login">
+      ログインユーザ名：<input id="name" /> <input id="connect" type="button"
+        value="ログイン" onClick="connectServerEndpoint();"
+      >
+    </div>
+
+    <div id="chat" class="chat">
+    <input id="inputMessage"> <input id="submitMessage"
+      type="button" onclick="submitMessage();" value="メッセージ送信"
+    ><br> <input id="close" type="button" value="切断"
+      onClick="closeServerEndpoint();"
+    >
+    <div id="messages" class="messages">
+      <div>チャット・メッセージ</div>
+      <div id="insertpos" class="insertpos"></div>
+    </div>
+  </div>
+</wicket:extend>
+</body>
+</html>
